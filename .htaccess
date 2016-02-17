@@ -1,0 +1,37 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    ##
+    ## API
+    #################
+    RewriteBase /api
+    RewriteRule ^(api.*)$ backend/public/index.php?$1 [L]
+
+
+    ##
+    ## ADMIN
+    #################
+    RewriteBase /admin
+    RewriteRule ^(bower-assets.*)$ backend/public/$1 [L]
+    RewriteRule ^(assets.*)$ backend/public/$1 [L]
+    RewriteRule ^(_debugbar.*)$ backend/public/$1 [L]
+    RewriteRule ^(uploads.*)$ backend/public/$1 [L]
+    RewriteRule ^(admin.*)$ backend/public/index.php?$1 [L]
+
+
+    ##
+    ## Frontend
+    #################
+    RewriteBase /
+    RewriteRule ^(lib.*)$ frontend/www/$1 [L]
+    RewriteRule ^(js.*)$ frontend/www/$1 [L]
+    RewriteRule ^(css.*)$ frontend/www/$1 [L]
+    RewriteRule ^(imgs.*)$ frontend/www/$1 [L]
+    RewriteRule ^(templates.*)$ frontend/www/$1 [L]
+    RewriteRule ^cordova.*$ frontend/www/cordova.js [L]
+    RewriteRule ^$ frontend/www/index.html [L]
+</IfModule>
