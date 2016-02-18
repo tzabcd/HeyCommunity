@@ -9,7 +9,7 @@
     ## API
     #################
     RewriteBase /api
-    RewriteRule ^(api.*)$ backend/public/index.php?$1 [L]
+    RewriteRule ^(api.*)$ backend/public/index.php [L]
 
 
     ##
@@ -20,7 +20,7 @@
     RewriteRule ^(assets.*)$ backend/public/$1 [L]
     RewriteRule ^(_debugbar.*)$ backend/public/$1 [L]
     RewriteRule ^(uploads.*)$ backend/public/$1 [L]
-    RewriteRule ^(admin.*)$ backend/public/index.php?$1 [L]
+    RewriteRule ^(admin.*)$ backend/public/index.php [L]
 
 
     ##
