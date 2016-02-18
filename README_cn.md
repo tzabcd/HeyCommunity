@@ -37,7 +37,7 @@ $ composer install
 $ bower install
 $ cp .env.example .env
 $ php artisan key:generate
-$ vi .env           ## 配置数据库连接
+$ vi .env                       ## 配置数据库连接
 # php artisan migrate:refresh --seed
 ```
 
@@ -52,7 +52,7 @@ IOS和Android设备上的运行暂不做介绍，如有需要请查看Ionic官�
 ## 联系
 
 Rod: supgeek.rod(AT)gmail.com   
-Giter: https://gitter.im/dev4living/hey-community   
+Giter: [https://gitter.im/dev4living/hey-community](https://gitter.im/dev4living/hey-community)   
 QQ群: 242078519   
 
 
