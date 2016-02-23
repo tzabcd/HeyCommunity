@@ -8,5 +8,6 @@
             "email": "supgeek.rod@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev"
 }
