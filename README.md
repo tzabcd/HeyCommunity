@@ -53,7 +53,7 @@ Run IOS and Android devices do temporarily introduce, if necessary, please view 
 
 Rod: supgeek.rod(AT)gmail.com   
 Giter: [https://gitter.im/dev4living/hey-community](https://gitter.im/dev4living/hey-community)   
-QQ群: 242078519   
+QQ Group: 242078519   
 
 
 ## Licenses
