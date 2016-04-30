@@ -27,6 +27,8 @@
     ## Frontend
     #################
     RewriteBase /
+    RewriteRule ^$ backend/public/index.php [L]
+
     RewriteRule ^(lib.*)$ frontend/www/$1 [L]
     RewriteRule ^(js.*)$ frontend/www/$1 [L]
     RewriteRule ^(css.*)$ frontend/www/$1 [L]
