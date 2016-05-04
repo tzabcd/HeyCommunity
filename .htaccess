@@ -40,3 +40,15 @@
     RewriteRule ^cordova.*$ frontend/www/cordova.js [L]
     RewriteRule ^$ frontend/www/index.html [L]
 </IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css                "access plus 3 days"
+    ExpiresByType application/javascript  "access plus 3 days"
+    ExpiresByType image/x-icon            "access plus 3 days"
+    ExpiresByType image/gif               "access plus 3 days"
+    ExpiresByType image/png               "access plus 3 days"
+    ExpiresByType image/jpeg              "access plus 3 days"
+    ExpiresByType video/x-flv             "access plus 3 days"
+    ExpiresByType application/pdf         "access plus 3 days"
+</IfModule>
