@@ -1,0 +1,13 @@
+{
+    "name": "dev4living/hey-community",
+    "description": "WebApp & IOS App & Android App of Community",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "supeRodv2",
+            "email": "supgeek.rod@gmail.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev"
+}
