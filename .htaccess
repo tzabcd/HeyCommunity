@@ -1,0 +1,52 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    ##
+    ## API
+    #################
+    RewriteBase /api
+    RewriteRule ^(api.*)$ backend/public/index.php [L]
+
+
+    ##
+    ## ADMIN
+    #################
+    RewriteBase /admin
+    RewriteRule ^(bower-assets.*)$ backend/public/$1 [L]
+    # RewriteRule ^(assets.*)$ backend/public/$1 [L]
+    RewriteRule ^(_debugbar.*)$ backend/public/$1 [L]
+    RewriteRule ^(uploads.*)$ backend/public/$1 [L]
+    RewriteRule ^(admin.*)$ backend/public/index.php [L]
+
+
+    ##
+    ## Frontend
+    #################
+    RewriteBase /
+    RewriteRule ^(bower-assets.*)$ backend/public/$1 [L]
+    # RewriteRule ^(assets.*)$ backend/public/$1 [L]
+    RewriteRule ^(_debugbar.*)$ backend/public/$1 [L]
+    RewriteRule ^(uploads.*)$ backend/public/$1 [L]
+
+
+    RewriteRule ^(build.*)$ frontend/www/$1 [L]
+    RewriteRule ^(assets.*)$ frontend/www/$1 [L]
+    RewriteRule ^(cordova.*)$ frontend/www/$1 [L]
+    RewriteRule ^$ frontend/www/index.html [L]
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css                "access plus 3 days"
+    ExpiresByType application/javascript  "access plus 3 days"
+    ExpiresByType image/x-icon            "access plus 3 days"
+    ExpiresByType image/gif               "access plus 3 days"
+    ExpiresByType image/png               "access plus 3 days"
+    ExpiresByType image/jpeg              "access plus 3 days"
+    ExpiresByType video/x-flv             "access plus 3 days"
+    ExpiresByType application/pdf         "access plus 3 days"
+</IfModule>
