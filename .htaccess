@@ -33,6 +33,7 @@
     RewriteRule ^(uploads.*)$ backend/public/$1 [L]
 
 
+    RewriteRule ^(others.*)$ frontend/www/$1 [L]
     RewriteRule ^(build.*)$ frontend/www/$1 [L]
     RewriteRule ^(assets.*)$ frontend/www/$1 [L]
     RewriteRule ^(cordova.*)$ frontend/www/$1 [L]
