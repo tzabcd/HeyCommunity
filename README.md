@@ -81,4 +81,4 @@ QQ Group: 242078519
 
 ## License
 
-The HeyCommunity is open-sourced software licensed under the [GPLv3](gpl-3.0.txt)
+The HeyCommunity is open-sourced software licensed under the [GPLv3](LICENSE.txt)

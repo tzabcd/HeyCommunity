@@ -81,4 +81,4 @@ QQ群: 242078519
 
 ## 授权
 
-HeyCommunity 是开源软件，遵循 [GPLv3](gpl-3.0.txt) 授权
+HeyCommunity 是开源软件，遵循 [GPLv3](LICENSE.txt) 授权
