@@ -1,5 +1,5 @@
 app:
-  image: daocloud.io/supperod/heycommunity-app
+  image: daocloud.io/rodv2/hey-community:latest
   links:
     - db:MYSQL
   volumes:
