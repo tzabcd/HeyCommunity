@@ -1,4 +1,4 @@
-HeyCommunity V2
+HeyCommunity V2.1.0-beta
 ============================
 
 [![Build Status](https://travis-ci.org/dev4living/HeyCommunity.svg?branch=dev-master)](https://travis-ci.org/dev4living/HeyCommunity)
@@ -56,7 +56,7 @@ If you are an experienced software engineer, you can choose advanced deployment
 ## Get the full project code
 $ git clone https://github.com/dev4living/HeyCommunity.git HeyCommunity
 $ cd HeyCommunity
-$ git submodule update --init                   ## This step may be slow, and you can get the source code from Releases
+$ git submodule update --init --recursive       ## This step may be slow, and you can get the source code from Releases
 
 
 ## Front-end deployment

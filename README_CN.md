@@ -56,7 +56,7 @@ HeyCommunity 是一款开源的社交软件，适用于 iOS / Android / Windows 
 ## 获取完整项目代码
 $ git clone https://github.com/dev4living/HeyCommunity.git HeyCommunity
 $ cd HeyCommunity
-$ git submodule update --init                   ## 此步骤可能比较缓慢，可从 Releases 中获取源代码
+$ git submodule update --init --recursive       ## 此步骤可能比较缓慢，可从 Releases 中获取源代码
 
 
 ## 前端部署
