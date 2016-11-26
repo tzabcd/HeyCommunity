@@ -1,5 +1,15 @@
 app:
   image: daocloud.io/rodv2/hey-community:latest
+  environment:
+    - LOCALE=zh-CN
+    - HC_ENV=product
+    - COMMUNITY_NAME=New Community
+    - ADMIN_NICKNAME=Admin
+    - ADMIN_EMAIL=admin@hey-community.com
+    - ADMIN_PASSWORD=hey community
+    - WECHAT_APPID=your_wechatpa_app_id
+    - WECHAT_SECRET=your_wechatpa_app_secret
+    - WECHAT_TEMP_NOTICE_ID=your_wechatpa_temp_id
   links:
     - db:MYSQL
   volumes:
