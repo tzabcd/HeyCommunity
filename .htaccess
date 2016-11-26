@@ -13,9 +13,11 @@
 
 
     ##
-    ## ADMIN
+    ## Dashboard
     #################
-    ## There is no admin dashboard
+    RewriteBase /dashboard
+    RewriteRule ^backend-assets/(.*)$ backend/public/$1 [L]
+    RewriteRule ^(dashboard.*)$ backend/public/index.php [L]
 
 
     ##
